@@ -8,18 +8,17 @@
 <body>
 	<h1>메일 리스트 가입</h1>
 	<p>
-		메일 리스트에 가입하려면,<br>
-		아래 항목을 기입하고 submit 버튼을 클릭하세요.
+		메일 리스트에 가입하려면,<br> 아래 항목을 기입하고 submit 버튼을 클릭하세요.
 	</p>
-	<form action="" method="">
-	    First name: <input type="text" name="fn" value="" ><br>
-	    Last name: <input type="text" name="ln" value=""><br>
-	    Email address: <input type="text" name="email" value=""><br>
-	    <input type="submit" value="submit">
+	<form action="<%=request.getContextPath()%>/add.jsp" method="post">
+		First name: <input type="text" name="firstName" value=""><br>
+		Last name: <input type="text" name="lastName" value=""><br>
+		Email address: <input type="text" name="email" value=""><br>
+		<input type="submit" value="등록">
 	</form>
 	<br>
 	<p>
-	<a href='<%=request.getContextPath() %>/index.jsp'>리스트 바로가기</a>
+		<a href='<%=request.getContextPath()%>/index.jsp'>리스트 바로가기</a>
 	</p>
 </body>
 </html>
