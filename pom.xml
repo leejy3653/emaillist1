@@ -3,7 +3,7 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>kr.co.itcen</groupId>
-	<artifactId>emaillist1</artifactId>
+	<artifactId>guestbook1</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
 
@@ -13,15 +13,15 @@
 
 	<dependencies>
 		<dependency>
-		    <groupId>org.mariadb.jdbc</groupId>
-		    <artifactId>mariadb-java-client</artifactId>
-		    <version>2.4.0</version>
-		</dependency>	
+			<groupId>org.mariadb.jdbc</groupId>
+			<artifactId>mariadb-java-client</artifactId>
+			<version>2.4.0</version>
+		</dependency>
 	</dependencies>
 
 	<build>
 		<sourceDirectory>src/main/java</sourceDirectory>
-		<finalName>emaillist1</finalName>
+		<finalName>guestbook1</finalName>
 		<resources>
 			<resource>
 				<directory>${project.basedir}/src/main/resources</directory>
@@ -29,7 +29,7 @@
 					<exclude>**/*.java</exclude>
 				</excludes>
 			</resource>
-		</resources>		
+		</resources>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
@@ -37,7 +37,7 @@
 				<configuration>
 					<encoding>UTF-8</encoding>
 				</configuration>
-			</plugin>		
+			</plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
@@ -57,6 +57,5 @@
 				</configuration>
 			</plugin>
 		</plugins>
-	</build>	
-
+	</build>
 </project>
